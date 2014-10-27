@@ -39,8 +39,6 @@ if __name__ == '__main__':
     encrypted = encrypt(key, msg)
     decrypted = decrypt(key, encrypted)
     if not msg == decrypted:
-        print msg
-        print decrypted
         raise Exception("Encryption Fail")
 
     print """

@@ -25,12 +25,6 @@ def decrypt(key, enc):
 	msg.append(chr(((enc_c - key_c) % 95)+32))
     return ''.join(msg)
 
-def check(enc):
-    is_good=True 
-    for i, c in enumerate(enc):
-        is_good = is_good and (32 <= ord(c) <= 126)
-    return is_good
-
 def make_randstr(msg_len):
     sl = []
     r = random.SystemRandom()

@@ -1,4 +1,8 @@
 encrypt-and-wrap
 ================
 
-a python script that generates an encrypted message within a python script to decrypt it with the given password
+Generate encrypted messages wrapped in a self-decrypting python script
+usage: python enc.py password > out.py
+where password is the encryption password and out.py is the message/script file
+to decrypt use: python out.py password
+this will print the message to stdout.

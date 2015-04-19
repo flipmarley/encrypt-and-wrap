@@ -9,3 +9,5 @@ the message to encrypt is read from stdin.
 
 to decrypt use: python out.py _password_<br>
 this will print the message to stdout.
+
+PS. Yes. I know this is not at all secure. easy to crack. holds 2x the data it needs. -F
